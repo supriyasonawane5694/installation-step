@@ -1,0 +1,59 @@
+1.TO install java on ubuntu
+-->sudo apt-get install default-jdk
+
+2.to check version of java
+-->java -version
+
+3.to install ssh in ubuntu
+-->sudo apt-get install ssh
+
+4.To check ssh installed or not
+-->which ssh
+
+5.format command
+-->hadoop namenode -format
+
+6.start hadoop 
+-->start-all.sh
+
+7.to check version of hadoop
+-->hadoop version
+
+8.To check list in hdfs
+-->hadoop fs -ls
+
+9.To veiw or check content of file in hdfs
+-->hadoop fs -cat /file
+
+10.romove file from hdfs
+-->hadoop fs -rm /file name
+
+11.put file on hdfs
+--> hadoop fs -put ~/source /destination
+
+12.copy file from local to hdfs
+-->hadoop fs -copyFromLocal /source /destination
+
+13.Create directory on hdfs
+-->hadoop -fs mkdir /directory name
+
+14.to check safe mode is on
+-->hadoop dfsadmin -safemode get
+
+15.to make safemode off
+-->hadoop dfsadmin -safemode leave
+
+16.to edit file
+-->nano file name
+
+17.change replica's
+-->hadoop fs -setrep 2 /path of file
+
+18.to check containt of jar file
+-->jar tvf <jar file name>
+
+19.to check jar is created or not
+-->ls jar file name
+
+20.Run coomand for output
+-->hadoop fs jar <jar file name> /<input file name> /<output file name>

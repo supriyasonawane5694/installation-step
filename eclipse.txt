@@ -1,0 +1,57 @@
+chmod 777 ecli....// permissions
+tar -xzvf ecli....// for extracting...
+
+How to open Eclipse?
+
+1.go to eclipse folder
+$/home/hduser$ cd eclipse
+ type 'ls' command
+	--->cd eclipse
+or directly go to eclipse folder and open eclipse
+
+2 it will ask for workspace 
+default workspace loacation is:  /home/hduser/workspace
+ you can also change it
+
+
+###2.to create shortcut on desktop
+--> run command on terminal  $ gedit .local/share/applications/eclipse.desktop
+3.it will open a editor paste below line in it and save
+
+[Desktop Entry]
+Name=Eclipse
+Type=Application
+Exec=/home/USERNAME/java-mars/eclipse/eclipse
+Terminal=false
+Icon=/home/USERNAME/java-mars/eclipse/icon.xpm
+Comment=Integrated Development Environment
+NoDisplay=false
+Categories=Development;IDE;
+Name[en]=Eclipse
+
+###how to create project in eclipse?
+1.go to file
+2.new java project and give project name---->next--->finish
+
+3.then add external jar files
+	a)go to src-->right click---->built path--->configured built path
+	b)libraries-->add external jar--->select required jar files --> ok
+
+####4.create class ??
+	Right click on src--->new class-->give class name-->ok
+5.write code in created class
+
+6.create a jar file ??
+	a)right click on project name-->export jar
+	b)click on java-->jar file-->next
+	c)give jar file name(its default location on /home/hduser)-->next-->next-->
+	-->Browse the main class file-->next
+
+7.put the desire input file on HDFS browser by command
+-->hadoop fs -put ~/source /destination
+
+8.run the command
+-->hadoop jar <jar file name> <inpute file> <output file name>
+
+
+
